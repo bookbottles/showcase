@@ -1,0 +1,20 @@
+{
+  "name": "bookbottles-showcase",
+  "version": "1.0.0",
+  "authors": [
+    "Anid Monsur <anid.monsur@bookbottles.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-ui-router": "~0.2.15"
+  }
+}

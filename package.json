@@ -1,0 +1,23 @@
+{
+  "name": "bookbottles-showcase",
+  "version": "1.0.0",
+  "description": "AngularJS Skill Test",
+  "author": "Anid Monsur <anid.monsur@bookbottles.com>",
+  "scripts": {
+    "start": "grunt",
+    "postinstall": "bower install"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.12.4",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-less": "^0.11.1",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-html2js": "~0.2.3",
+    "grunt-nodemon": "~0.1.2",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
