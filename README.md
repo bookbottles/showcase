@@ -36,7 +36,8 @@ a **service** as an API wrapper and use at least one custom **directive** to dis
  
 ### Final Words
 * This project uses grunt to assist with development. The build task will copy the appropriate files to 
-the build directory, covert templates to JS, build the index.html file, and serve it up using Express.
+the build directory, covert templates to JS, build the index.html file, and serve it up using Express. Because
+grunt is awesome, you can setup your files in the `src` folder however you like.
 
 * Styling is important, but shouldn't be your focus. Feel free to use Bootstrap, Foundation, or any other 
 framework. You can install via bower and include their files in the `src/less/main.less` file.
