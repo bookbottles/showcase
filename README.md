@@ -11,7 +11,7 @@ review from there.
 
 Grunt, npm, and bower are required. Clone the repository locally and run `npm install`. You can then 
 run `npm start` to start the default grunt task. This is a build task which you can keep running during 
-development. If everything worked, you should be able to open the app at [localhost:3444](localhost:3444).
+development. If everything worked, you should be able to open the app at [localhost:3444](http://localhost:3444).
 
 I've setup the structure of the application already for you. Your work should happen in the `src` 
 folder. The app has two states right now, each with a template just to get you started. Feel free to 
