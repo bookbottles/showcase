@@ -24,7 +24,7 @@ Sign Up, and Dashboard.
 
 * Login and Sign Up need not connect to any backend. Use a **service** to return a mock server response.
 
-* The Sign Up page should require a username, password, and password combination.
+* The Sign Up page should require a username, password, and password confirmation.
 
 * Login should accept a username/password combo of bookbottles/showcase. Anything else should be rejected 
 with appropriate error messages.
