@@ -1,0 +1,6 @@
+build/
+gbuild/
+dist/
+vendor/
+Gruntfile.js
+grunt/
