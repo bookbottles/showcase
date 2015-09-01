@@ -8,6 +8,6 @@ module.exports = SignUpCtrl;
 function SignUpCtrl(UserService) {
     var vm = this;
 
-
+    vm.signUp = UserService.create;
 }
 

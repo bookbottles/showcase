@@ -15,7 +15,7 @@ function UserService() {
     //////////
 
     function create() {
-
+        console.debug('Creating a user');
     }
 }
 
