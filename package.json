@@ -1,23 +1,63 @@
 {
   "name": "bookbottles-showcase",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "AngularJS Skill Test",
   "author": "Anid Monsur <anid.monsur@bookbottles.com>",
   "scripts": {
-    "start": "grunt",
-    "postinstall": "bower install"
+    "start": "gulp"
   },
-  "license": "ISC",
+  "browser": {
+    "angulartics": "./node_modules/angulartics/src/angulartics.js"
+  },
+  "browserify-shim": {
+    "angulartics": {
+      "exports": "angular.module('angulartics').name"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "jadeify",
+      "browserify-shim",
+      "browserify-ngannotate"
+    ]
+  },
   "devDependencies": {
-    "express": "^4.12.4",
-    "grunt": "^0.4.5",
-    "grunt-concurrent": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-less": "^0.11.1",
-    "grunt-contrib-watch": "~0.4.0",
-    "grunt-html2js": "~0.2.3",
-    "grunt-nodemon": "~0.1.2",
-    "load-grunt-tasks": "^3.2.0"
-  }
+    "angular": "~1.4.4",
+    "angular-ui-router": "~0.2.15",
+    "angulartics": "~0.20.0",
+    "angulartics-google-analytics": "~0.1.1",
+    "bootstrap": "^3.3.5",
+    "browserify": "^11.0.1",
+    "browserify-ngannotate": "^1.0.1",
+    "browserify-shim": "^3.8.10",
+    "connect-livereload": "^0.5.3",
+    "del": "^1.2.1",
+    "eslint": "^1.2.1",
+    "express": "~4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-header": "^1.5.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^1.0.0-rc",
+    "gulp-minify-css": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.6",
+    "jadeify": "^4.4.0",
+    "lodash": "^3.10.1",
+    "open": "0.0.5",
+    "q": "^1.4.1",
+    "run-sequence": "^1.1.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "authors": "Anid Monsur <anid.monsur@bookbottles.com>",
+  "repository": "bookbottles/showcase"
 }
