@@ -36,6 +36,8 @@ with appropriate error messages.
 
 * The dashboard should display data from any public API of your choice. Use 
 a **service** as an API wrapper and use at least one custom **directive** to display data.
+
+* Bonus points awarded if your data comes from a [Firebase](https://www.firebase.com/) instance.
  
 ### Final Words
 * This project uses gulp to assist with development. The build task will copy the appropriate files to 
