@@ -9,13 +9,16 @@ prowess.
 Please begin by forking this repo to your own Github account. You'll push changes to your own repo and we'll 
 review from there.
 
-Grunt, npm, and bower are required. Clone the repository locally and run `npm install`. You can then 
-run `npm start` to start the default grunt task. This is a build task which you can keep running during 
-development. If everything worked, you should be able to open the app at [localhost:3444](http://localhost:3444).
+You will need to have npm installed. Clone the repository locally and run `npm install`. You can then 
+run `npm start` to start the default gulp task. This is a build task which you can keep running during 
+development. If everything worked, your browser will automatically open the app at [localhost:3444](localhost:3444).
 
 I've setup the structure of the application already for you. Your work should happen in the `src` 
-folder. The app has two states right now, each with a template just to get you started. Feel free to 
-discard those completely if you wish.
+folder. The app has two states right now, each with a template just to get you started. The signup
+module has an example controller and service scaffolded as well.
+
+[Browserify](http://browserify.org/) is used in this project to create the final javascript bundle. If you
+want to include additional npm dependencies, make sure to use `require`.
 
 ### The Task
 
@@ -31,19 +34,15 @@ with appropriate error messages.
 
 * The dashboard should only be accessible after a user has signed up or logged in.
 
-* The dashboard should display data from any public API of your choice (e.g. Twitter, HackerNews). Use 
+* The dashboard should display data from any public API of your choice. Use 
 a **service** as an API wrapper and use at least one custom **directive** to display data.
  
 ### Final Words
-* This project uses grunt to assist with development. The build task will copy the appropriate files to 
-the build directory, covert templates to JS, build the index.html file, and serve it up using Express. Because
-grunt is awesome, you can setup your files in the `src` folder however you like.
+* This project uses gulp to assist with development. The build task will copy the appropriate files to 
+the build directory, covert templates to HTML, build the index.html file, and serve it up using Express.
 
-* Styling is important, but shouldn't be your focus. Feel free to use Bootstrap, Foundation, or any other 
-framework. You can install via bower and include their files in the `src/less/main.less` file.
-```less
-@import "../../vendor/bootstrap/less/bootstrap.less";
-```
+* Styling is important, but shouldn't be your focus. I have included Bootstrap as an import 
+in the `src/less/main.less` file. Add your own CSS and/or use another framework if you wish.
 
 * Login persistence is not important for this project.
 
