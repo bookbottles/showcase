@@ -96,7 +96,7 @@ gulp.task('root', function() {
         .pipe(plugins.livereload());
 });
 
-gulp.task('browserify', ['env'], function() {
+gulp.task('browserify', function() {
     var browsePackage = browserify(_.merge(watchify.args, {
         entries: [config.entry.js],
         debug: true
@@ -132,7 +132,7 @@ gulp.task('browserify', ['env'], function() {
     }
 });
 
-gulp.task('index', ['env'], function() {
+gulp.task('index', function() {
     return gulp.src(config.source.index)
         .pipe(plugins.jade({
             locals: {
