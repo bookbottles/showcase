@@ -34,14 +34,14 @@ with appropriate error messages.
 
 * The dashboard should only be accessible after a user has signed up or logged in.
 
-* The dashboard should display data from any public API of your choice. Use 
+* The dashboard should retrieve and display simple data from any web API of your choice. Use 
 a **service** as an API wrapper and use at least one custom **directive** to display data.
 
 * Bonus points awarded if your data comes from a [Firebase](https://www.firebase.com/) instance.
  
 ### Final Words
 * This project uses gulp to assist with development. The build task will copy the appropriate files to 
-the build directory, covert templates to HTML, build the index.html file, and serve it up using Express.
+the build directory, covert templates to inline HTML, build the index.html file, and serve it up using Express.
 
 * Styling is important, but shouldn't be your focus. I have included Bootstrap as an import 
 in the `src/less/main.less` file. Add your own CSS and/or use another framework if you wish.
