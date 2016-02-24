@@ -1,31 +1,20 @@
 {
   "name": "bookbottles-showcase",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "AngularJS Skill Test",
   "author": "Anid Monsur <anid.monsur@bookbottles.com>",
   "scripts": {
     "start": "gulp"
   },
-  "browser": {
-    "angulartics": "./node_modules/angulartics/src/angulartics.js"
-  },
-  "browserify-shim": {
-    "angulartics": {
-      "exports": "angular.module('angulartics').name"
-    }
-  },
   "browserify": {
     "transform": [
       "jadeify",
-      "browserify-shim",
       "browserify-ngannotate"
     ]
   },
   "devDependencies": {
     "angular": "~1.4.4",
     "angular-ui-router": "~0.2.15",
-    "angulartics": "~0.20.0",
-    "angulartics-google-analytics": "~0.1.1",
     "bootstrap": "^3.3.5",
     "browserify": "^11.0.1",
     "browserify-ngannotate": "^1.0.1",
